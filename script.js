@@ -7,7 +7,7 @@ function openTaskModal(date) {
     fetch(`manage_tasks.php?get_form=1&date=${date}`)
         .then(response => response.text())
         .then(html => {
-            modalBody.innerHTML = html;
+            modalBody.textContent = html;
         });
 }
 
